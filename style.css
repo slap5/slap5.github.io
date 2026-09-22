@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --base-color: #c2c0c0f5;
+    --text-color: #000000;
+    --primary-color: #0e5aa1;
+    --secondary-color: #0f318b;
+    --color-1: #a9a9aa;
+    --color-2: #ffffff;
+    --color-3: #dee2e6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0em;
+}
+
+html {
+    font-family:'EB Garamond', serif;
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--base-color);
+}
+
+.content {
+    color: white;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    padding-top: 20vh;
+}
+
+h1, h2, h3 {
+    font-family: EB Garamond, serif;
+    margin: 0em auto 0em auto;
+}
+
+nav {
+    margin: 0em auto 0em auto;
+    width: min(1000px, 100%);
+}
+
+ul li {
+    margin: 0.5em auto 0.5em auto;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 4em;
+}
+
+nav li:first-child {
+    margin-right:auto;
+    font-family: EB Garamond, serif;
+    font-weight: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header, section {
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em, 15%);
+    border-radius: 2em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+   flex: 0 1 34em;
+   margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1.25em;
+    margin: 0.75em 0 1em 0;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+}
+
