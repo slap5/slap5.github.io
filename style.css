@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-    --base-color: #c2c0c0f5;
-    --text-color: #000000;
-    --primary-color: #0e5aa1;
-    --secondary-color: #0f318b;
-    --color-1: #a9a9aa;
-    --color-2: #ffffff;
-    --color-3: #dee2e6;
+    --base-color: #18251e;
+    --text-color: #e6eadc;
+    --primary-color: #789b68;
+    --secondary-color: #587b4f;
+    --color-1: #294333;
+    --color-2: #294333;
+    --color-3: #294333;
+    --color-4: #3c5550;
+    --color-5: #514d3b;
 }
 
 * {
@@ -26,7 +28,7 @@ body {
 }
 
 .content {
-    color: white;
+    color: var(--text-color);
     text-align: center;
     font-family: 'EB Garamond', serif;
     padding-top: 20vh;
@@ -115,7 +117,7 @@ h2 {
 .cta-button {
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     background-color: var(--primary-color);
     padding: .75em 1.25em;
     border-radius: .5em;
@@ -124,5 +126,21 @@ h2 {
 
 .cta-button:hover {
     background-color: var(--secondary-color);
+}
+
+section#my-goals  {
+    background-color: var(--color-2);
+}
+
+section#my-work {
+    background-color: var(--color-3);
+}
+
+section#contact-me {
+    background-color: var(--color-4);
+}
+
+section#about-this-project {
+    background-color: var(--color-5);
 }
 
